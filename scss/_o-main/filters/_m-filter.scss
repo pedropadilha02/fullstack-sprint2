@@ -1,0 +1,18 @@
+.filter {
+  
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    
+    @include for-phone-only {
+      display: none;
+    }
+
+    @import "_a-filter__list.scss";
+
+    @import "_a-filter__item.scss";
+
+    @import "_a-filter__label.scss";
+
+    @import "_a-filter__img.scss";
+
+  }

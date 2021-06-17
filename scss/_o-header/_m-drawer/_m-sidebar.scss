@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.filter{
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    content: '';
+    display: block;
+    height: calc(100% - 75px);
+    width: 100%;
+    left: 0;
+    top: 78px;
+    position: absolute;
+    z-index: 1;
+}
+
+span {
+    font-size: 9.5px;
+}
+
+.floating {
+    @include for-phone-only {
+      position: fixed;
+      top: 0;
+      background-color: #fff;
+    }
+  }
+
+.sidebar__icon {
+    max-height: 24px;
+    max-width: 24px;
+    transform: rotate(-90deg);
+    float: right;
+    padding-right: 20px;
+    
+}
+
+.sidebar {
+    position: fixed;
+    width: 80%;
+    left: -80%;
+    top: 76px;
+    height: 100%;
+    background: #ffffff;
+    z-index: 2;
+    overflow: scroll;
+    display: none;
+}
+
+#new {
+    height: 50px;
+    line-height: 57px;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.sidebar a {
+    display: block;
+    height: 41px;
+    width: 100%;
+    line-height: 41px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    color: #000;
+    transition: all .5s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.active{
+    font-size: 3px;
+}
+
+#check {
+    display: none;
+  }
+  
+label {
+    z-index: 2;
+    height: 24px;
+    width: 24px;
+    font-size: 9px;
+    font-weight: 50;
+    color:rgb(128, 128, 128);
+    margin: 0;
+    top: 4%;
+    
+}
+
+label:hover {
+    background: rgba(0, 0, 0, .1);
+    border-radius: 50%;
+    transition: none;
+}
+
+label #btn, #cancel { 
+    top: 5.7%;
+    cursor: pointer;
+    text-align: center;
+    line-height: 24px;
+    transition: all .5s ease;
+    z-index: 2;
+    position: absolute;
+
+}
+
+label #cancel {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+    transition: all .5s ease;
+    display: block;
+}
+
+#check:checked ~ label #btn {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ label #cancel {
+    opacity: 1;
+    visibility: visible;
+}
+
+#close-icon {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ .filter {
+    visibility: visible;
+    
+}

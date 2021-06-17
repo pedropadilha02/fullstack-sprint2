@@ -1,0 +1,25 @@
+.apps {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .newsletter__msg {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-right: 20px;
+    }
+
+    .newsletter__app {
+
+      margin-left: 10px;
+
+      .img {
+        width: 110px;
+      }
+
+    }
+
+  }
+

@@ -3,10 +3,13 @@
 
 <head>
   <meta charset="UTF-8" />
+  <html lang="pt-br">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Riachuelo</title>
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <script>
@@ -23,67 +26,109 @@
     <div class="header">
       <div class="container">
         <div class="mobile">
-          <div class="drawer drawer-active">
-            <img src="assets/menu.svg">
-            <p class="title">menu</p>
+          
+          <input type="checkbox" id="check">
+          <label class="drawer drawer--active" for="check">
+            <img class="drawer__logo" src="assets/rchlo.svg" alt="Logo Riachuelo">
+            <i class="drawer__title" id="btn">menu</i><img class="drawer__icon" id="menu-icon" src="assets/menu.svg" alt="icone abrir menu">
+            <i class="drawer__title" id="cancel">fechar</i><img class="drawer__icon" id="close-icon" src="assets/close.svg" alt="icone fechar menu">
+          </label>
+          <div class="filter"></div>
+          <div class="sidebar">
+            <a href="#" class="active" id="new">
+              <span>Novidades</span>
+            </a>
+            <a href="#" class="active">
+              <span>Feminino</span>
+              <img class="sidebar__icon" src="assets/filter.svg" alt="icone de navegação">
+            </a>
+            <a href="#" class="active">
+              <span>Masculino</span>
+              <img class="sidebar__icon" src="assets/filter.svg" alt="icone de navegação">
+            </a>
+            <a href="#" class="active">
+              <span>Infantil</span>
+              <img class="sidebar__icon" src="assets/filter.svg" alt="icone de navegação">
+            </a>
+            <a href="#" class="active">
+              <span>Moda Íntima</span>
+              <img class="sidebar__icon" src="assets/filter.svg" alt="icone de navegação">
+            </a>
+            <a href="#" class="active">
+              <span>Calçados</span>
+              <img class="sidebar__icon" src="assets/filter.svg" alt="icone de navegação">
+            </a>
+            <a href="#" class="active">
+              <span>Acessórios e Relógios</span>
+              <img class="sidebar__icon" src="assets/filter.svg" alt="icone de navegação">
+            </a>
+            <a href="#" class="active">
+              <span>Beleza e Perfume</span>
+              <img class="sidebar__icon" src="assets/filter.svg" alt="icone de navegação">
+            </a>
+            <a href="#" class="active">
+              <span>Casa Riachuelo</span>
+              <img class="sidebar__icon" src="assets/filter.svg" alt="icone de navegação">
+            </a>
+            <a href="#" class="active">
+              <span>Eletrônicos</span>
+              <img class="sidebar__icon" src="assets/filter.svg" alt="icone de navegação">
+            </a>
+            <a href="#" class="active">
+              <span>Personagens</span>
+            </a>
+            <a href="#" class="active">
+              <span>Outlet</span>
+            </a>
           </div>
-          <div class="drawer close">
-            <img src="assets/close.svg">
-            <p class="title">fechar</p>
-          </div>
-          <h1 class="logo">
-            <img class="img" src="assets/rchlo.svg" />
-          </h1>
         </div>
         <div class="desktop">
-          <h1 class="logo">
-            <img class="img" src="assets/riachuelo.svg" />
+          <h1 class="header__logo">
+            <img class="img" src="assets/riachuelo.svg" alt="Logo Riachuelo" />
           </h1>
         </div>
-        <div class="s">
-          <img class="i" src="assets/search.svg">
-          <input class="in" type="search" placeholder="O que você está procurando?" />
+        <div class="search">
+          <img class="search__icon" src="assets/search.svg" alt="ícone de pesquisa">
+          <input class="search__input" type="search" placeholder="O que você está procurando?" />
         </div>
 
         <div class="menu">
-          <ul class="list">
+          <ul class="menu__list">
             <li class="item">
-              <a class="link" href="">
-                <span>Novidades</span>
-              </a>
+              <a class="menu__link" href="#">Novidades</a>
             </li>
             <li class="item">
-              <a class="link" href="">Feminino</a>
+              <a class="menu__link" href="#">Feminino</a>
             </li>
             <li class="item">
-              <a class="link" href="">Masculino</a>
+              <a class="menu__link" href="#">Masculino</a>
             </li>
             <li class="item">
-              <a class="link" href="">Infantil</a>
+              <a class="menu__link" href="#">Infantil</a>
             </li>
             <li class="item">
-              <a class="link" href="">Moda Íntima</a>
+              <a class="menu__link" href="#">Moda Íntima</a>
             </li>
             <li class="item">
-              <a class="link" href="">Calçados</a>
+              <a class="menu__link" href="#">Calçados</a>
             </li>
             <li class="item">
-              <a class="link" href="">Acessórios e Relógios</a>
+              <a class="menu__link" href="#">Acessórios e Relógios</a>
             </li>
             <li class="item">
-              <a class="link" href="">Beleza e Perfume</a>
+              <a class="menu__link" href="#">Beleza e Perfume</a>
             </li>
             <li class="item">
-              <a class="link" href="">Casa Riachuelo</a>
+              <a class="menu__link" href="#">Casa Riachuelo</a>
             </li>
             <li class="item">
-              <a class="link" href="">Eletrônicos</a>
+              <a class="menu__link" href="#">Eletrônicos</a>
             </li>
             <li class="item">
-              <a class="link" href="">Personagens</a>
+              <a class="menu__link" href="#">Personagens</a>
             </li>
             <li class="item">
-              <a class="link" href="">Outlet</a>
+              <a class="menu__link" href="#">Outlet</a>
             </li>
           </ul>
         </div>
@@ -91,181 +136,179 @@
     </div>
     <div class="main">
       <div class="breadcrumbs">
-        <div class="nav">
-          <ol class="list">
-            <li class="item">
-              <a class="link" href="">Home</a>
+          <ol class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="link" href="#">Home</a>
             </li>
-            <li class="item separator">/</li>
-            <li class="item">
-              <a class="link" href="">Infantil</a>
+            <li class="breadcrumbs__item separator">/</li>
+            <li class="breadcrumbs__item">
+              <a class="link" href="#">Infantil</a>
             </li>
-            <li class="item separator">/</li>
-            <li class="item">
-              <a class="link" href="">Personagens</a>
+            <li class="breadcrumbs__item separator">/</li>
+            <li class="breadcrumbs__item">
+              <a class="link" href="#">Personagens</a>
             </li>
-            <li class="item separator">/</li>
-            <li class="item item--active">
-              <span class="link">Mario Bros</span>
+            <li class="breadcrumbs__item separator">/</li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__item active">Mario Bros</span>
             </li>
           </ol>
-        </div>
       </div>
 
-      <div class="filters">
-        <ul class="list">
-          <li class="item">
-            <span class="label">Tamanho</span>
-            <img class="img" src="assets/filter.svg" >
+      <div class="filter">
+        <ul class="filter__list">
+          <li class="filter__item">
+            <span class="filter__label">Tamanho</span>
+            <img class="filter__img" src="assets/filter.svg" alt="icone para filtro">
           </li>
-          <li class="item">
-            <span class="label">Cor</span>
-            <img class="img" src="assets/filter.svg" >
+          <li class="filter__item">
+            <span class="filter__label">Cor</span>
+            <img class="filter__img" src="assets/filter.svg" alt="icone para filtro">
           </li>
-          <li class="item">
-            <span class="label">Departamento</span>
-            <img class="img" src="assets/filter.svg" >
+          <li class="filter__item">
+            <span class="filter__label">Departamento</span>
+            <img class="filter__img" src="assets/filter.svg" alt="icone para filtro">
           </li>
-          <li class="item">
-            <span class="label">Categoria</span>
-            <img class="img" src="assets/filter.svg" >
+          <li class="filter__item">
+            <span class="filter__label">Categoria</span>
+            <img class="filter__img" src="assets/filter.svg" alt="icone para filtro">
           </li>
-          <li class="item">
-            <span class="label">Manga</span>
-            <img class="img" src="assets/filter.svg" >
+          <li class="filter__item">
+            <span class="filter__label">Manga</span>
+            <img class="filter__img" src="assets/filter.svg" alt="icone para filtro">
           </li>
         </ul>
       </div>
 
       <div class="products">
-        <div class="row">
-          <ol class="list">
-            <li class="cards">
+        <div class="products__row">
+          <ol class="produtcts__list">
+            <li class="products__cards">
               <div class="card">
-                <img class="img" src="assets/c1.webp" />
-                <p class="description">
+                <img class="card__img" src="assets/c1.webp" alt="A Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a 18 é confeccionada em material sintético. Possui estrutura ampla e modelo puffer, com capuz em pelúcia e bolsos frontais. Ideal para compor looks de inverno, mas sem perder o estilo. Combine com uma camiseta, calça jeans e tênis colorido." />
+                <p class="card__description">
                   Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
                   18
                 </p>
-                <p class="price">R$ 199,90</p>
+                <p class="card__price">R$ 199,90</p>
               </div>
             </li>
-            <li class="cards">
+            <li class="products__cards">
               <div class="card">
-                <img class="img" src="assets/c2.webp" />
-                <p class="description">
+                <img class="card__img" src="assets/c2.webp" alt="A Camiseta Infantil Manga Curta Super Mario Azul Tam 4 a 10 é confeccionada em malha macia e possui decote careca, mangas curtas e padronagem do Super Mario. Aposte na peça na hora de compor visuais geek divertidos." />
+                <p class="card__description">
                   Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
                   18
                 </p>
-                <p class="price">R$ 199,90</p>
+                <p class="card__price">R$ 199,90</p>
               </div>
             </li>
-            <li class="cards">
+            <li class="products__cards">
               <div class="card">
-                <img class="img" src="assets/c3.webp" />
-                <p class="description">
+                <img class="card__img" src="assets/c3.webp" alt="A Camiseta Infantil Manga Curta Super Mario Branco Tam 4 a 10 é confeccionada em malha macia de algodão e possui decote careca, mangas curtas e detalhe de estampa frontal e padronagem do Super Mario. Aposte na peça na hora de compor visuais geek divertidos."/>
+                <p class="card__description">
                   Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
                   18
                 </p>
-                <p class="price">R$ 199,90</p>
+                <p class="card__price">R$ 199,90</p>
               </div>
             </li>
-            <li class="cards">
+            <li class="products__cards">
               <div class="card">
-                <img class="img" src="assets/c4.webp" />
-                <p class="description">
+                <img class="card__img" src="assets/c4.webp" alt="A Camiseta Infantil Manga Longa Super Mario Vermelho Tam 4 a 10 é confeccionada em malha macia, possui decote redondo, manga longa sobreposta e estampa divertida. Ideal para compor looks modernos e confortáveis para os pequenos!" />
+                <p class="card__description">
                   Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
                   18
                 </p>
-                <p class="price">R$ 199,90</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-        <div class="row">
-          <ol class="list">
-            <li class="cards">
-              <div class="card">
-                <img class="img" src="assets/c5.webp" />
-                <p class="description">
-                  Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
-                  18
-                </p>
-                <p class="price">R$ 199,90</p>
-              </div>
-            </li>
-            <li class="cards">
-              <div class="card">
-                <img class="img" src="assets/c6.webp" />
-                <p class="description">
-                  Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
-                  18
-                </p>
-                <p class="price">R$ 199,90</p>
-              </div>
-            </li>
-            <li class="cards">
-              <div class="card">
-                <img class="img" src="assets/c7.webp" />
-                <p class="description">
-                  Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
-                  18
-                </p>
-                <p class="price">R$ 199,90</p>
-              </div>
-            </li>
-            <li class="cards">
-              <div class="card">
-                <img class="img" src="assets/c8.webp" />
-                <p class="description">
-                  Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
-                  18
-                </p>
-                <p class="price">R$ 199,90</p>
+                <p class="card__price">R$ 199,90</p>
               </div>
             </li>
           </ol>
         </div>
-        <div class="row">
-          <ol class="list">
-            <li class="cards">
+        <div class="products__row">
+          <ol class="produtcts__list">
+            <li class="products__cards">
               <div class="card">
-                <img class="img" src="assets/c9.webp" />
-                <p class="description">
+                <img class="card__img" src="assets/c5.webp" alt="Os pequenos vão adorar usar a Camiseta Juvenil Manga Curta Mario Bros e sair por aí com a turma do bigodudo mais famoso do mundo! Confeccionada em malha de algodão, a camiseta apresenta estampa frontal exclusiva Mario Bros Riachuelo. Muito estilosa e confortável, o pequeno não vai querer saber de outra camiseta!"/>
+                <p class="card__description">
                   Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
                   18
                 </p>
-                <p class="price">R$ 199,90</p>
+                <p class="card__price">R$ 199,90</p>
               </div>
             </li>
-            <li class="cards">
+            <li class="products__cards">
               <div class="card">
-                <img class="img" src="assets/c10.webp" />
-                <p class="description">
+                <img class="card__img" src="assets/c6.webp" alt="Nada melhor para compor um look moderno do que uma camiseta com estampa do seu personagem favorito. Elas são versáteis, confortáveis e cheias de significados. A Camiseta Juvenil Manga Curta Super Mario Azul Tam 10 a 18 é confeccionada em malha macia, possui decote arredondado, modelagem regular e estampa frontal. Combine com bermuda jeans estonada e tênis para um visual cheio de estilo."/>
+                <p class="card__description">
                   Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
                   18
                 </p>
-                <p class="price">R$ 199,90</p>
+                <p class="card__price">R$ 199,90</p>
               </div>
             </li>
-            <li class="cards">
+            <li class="products__cards">
               <div class="card">
-                <img class="img" src="assets/c11.webp" />
-                <p class="description">
+                <img class="card__img" src="assets/c7.webp" alt="A Regata Infantil Mario Bros Branco Tam 4 a 10 é confeccionada em fibra natural, possui decote redondo e modelagem regular. As peças temáticas com os personagens preferidos da criançada são indispensáveis no guarda-roupa. Divertidas e cheias de personalidade, os modelos são uma forma dos pequenos se expressarem em relação aos seus gostos pessoais, que já começam desde cedo. Aposte!"/>
+                <p class="card__description">
                   Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
                   18
                 </p>
-                <p class="price">R$ 199,90</p>
+                <p class="card__price">R$ 199,90</p>
               </div>
             </li>
-            <li class="cards">
+            <li class="products__cards">
               <div class="card">
-                <img class="img" src="assets/c12.webp" />
-                <p class="description">
+                <img class="card__img" src="assets/c8.webp" alt="Nada melhor para compor um look moderno do que uma camiseta estampada. Elas são versáteis, confortáveis e cheias de significados. A Camiseta Juvenil Super Mario é confeccionada em malha macia, com modelagem regular e gola careca. Combine com jeans estonado e tênis para um visual despojado."/>
+                <p class="card__description">
                   Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
                   18
                 </p>
-                <p class="price">R$ 199,90</p>
+                <p class="card__price">R$ 199,90</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <div class="products__row">
+          <ol class="produtcts__list">
+            <li class="products__cards">
+              <div class="card">
+                <img class="card__img" src="assets/c9.webp" alt="A Camiseta Infantil Manga Curta Super Star Mario Bros Cinza Mescla Chumbo Tam 4 a 10 é confeccionada em malha macia, possui decote arredondado, modelagem regular e estampa frontal da a peça. Nada melhor para compor um look moderno do que uma camiseta com estampa temática. Elas são versáteis, confortáveis e cheias de significados. Combine com um short jeans e papete para um visual despojado."/>
+                <p class="card__description">
+                  Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
+                  18
+                </p>
+                <p class="card__price">R$ 199,90</p>
+              </div>
+            </li>
+            <li class="products__cards">
+              <div class="card">
+                <img class="card__img" src="assets/c10.webp" alt="A Blusa de Moletom Juvenil com Capuz Mario Bros Cinza Mescla Tam 10 a 16 é muito versátil para qualquer ocasião, inclusive na hora de escolher um look para o dia a dia. Elas são práticas, confortáveis e possibilitam maior movimento nos dias de lazer, mesmo em dias mais amenos. O blusão é perfeito para criar um visual despojado."/>
+                <p class="card__description">
+                  Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
+                  18
+                </p>
+                <p class="card__price">R$ 199,90</p>
+              </div>
+            </li>
+            <li class="products__cards">
+              <div class="card">
+                <img class="card__img" src="assets/c11.webp" alt="A Camiseta Infantil Manga Curta Mario Bros Vermelho Tam 4 a 10 é confeccionada em malha macia, possui decote arredondado, modelagem regular e estampa frontal da a peça. Nada melhor para compor um look moderno do que uma camiseta estampada. Elas são versáteis, confortáveis e cheias de significados. Combine com um short jeans e tênis cano médio para um visual despojado."/>
+                <p class="card__description">
+                  Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
+                  18
+                </p>
+                <p class="card__price">R$ 199,90</p>
+              </div>
+            </li>
+            <li class="products__cards">
+              <div class="card">
+                <img class="card__img" src="assets/c12.webp" alt="A Camiseta Infantil Manga Curta Mário Bros Vermelha Tam 4 a 10 é ideal para se divertir por aí! Mamma Mia! Para salvar a Princesa Peach das garras maldosas do Bowser, nada melhor que uma camiseta estilosa e confortável!"/>
+                <p class="card__description">
+                  Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a
+                  18
+                </p>
+                <p class="card__price">R$ 199,90</p>
               </div>
             </li>
           </ol>
@@ -273,163 +316,164 @@
       </div>
     </div>
     <div class="footer">
-      <div class="container contact">
-          <p class="info">Receba ofertas e novidades por e-mail</p>
-          <form action="/">
-            <input class="input" type="email" placeholder="Digite aqui seu e-mail" />
-            <button class="btn" type="submit">
-              <span class="txt">Cadastrar</span>
+      <div class="container newsletter">
+          <p class="newsletter__info">Receba ofertas e novidades por e-mail</p>
+          <form class="newsletter__form" action="/">
+            <input class="newsletter__input" type="email" placeholder="Digite aqui seu e-mail"/>
+            <button class="newsletter__button" type="submit">
+              <span class="newsletter__txt">Cadastrar</span>
             </button>
+            <input class="newsletter__interesses" type="text" placeholder="Interesses" />
           </form>
           <div class="apps">
-            <p class="msg">Baixe nosso App</p>
-            <a class="app" href="#">
-              <img class="img" src="assets/google-play.webp" />
+            <p class="newsletter__msg">Baixe nosso App</p>
+            <a class="newsletter__app" href="#">
+              <img class="img" src="assets/google-play.webp" alt="icone para baixar o aplicativo da Riachuelo na playstore"/>
             </a>
-            <a class="app" href="#">
-              <img class="img" src="assets/app-store.webp" />
+            <a class="newsletter__app" href="#">
+              <img class="img" src="assets/app-store.webp" alt="icone para baixar o aplicativo da Riachuelo na appstore"/>
             </a>
           </div>
       </div>
-      <div class="links">
+      <div class="footer__links">
         <div class="container contacts">
-          <div class="col">
-            <a href="#" class="contact-icon">
-              <img class="img" src="assets/ico-attendance.svg" />
-              <p class="text">Atendimento</p>
+          <div class="contacts__column">
+            <a href="#" class="contact__icon">
+              <img class="contact__img" src="assets/ico-attendance.svg" alt="icone para atendimento"/>
+              <p class="contacts__text">Atendimento</p>
             </a>
-            <a href="#" class="contact-icon">
-              <img class="img" src="assets/ico-faq.svg" />
-              <p class="text">Perguntas Frequentes</p>
+            <a href="#" class="contact__icon">
+              <img class="contact__img" src="assets/ico-faq.svg" alt="icone para perguntas frequentes"/>
+              <p class="contacts__text">Perguntas Frequentes</p>
             </a>
           </div>
-          <div class="col">
-            <a href="#" class="contact-icon">
-              <img class="img" src="assets/ico-invoice-and-statement.svg" />
-              <p class="text">Fatura e Extrato</p>
+          <div class="contacts__column">
+            <a href="#" class="contact__icon">
+              <img class="contact__img" src="assets/ico-invoice-and-statement.svg" alt="icone para fatura e extrato"/>
+              <p class="contacts__text">Fatura e Extrato</p>
             </a>
-            <a href="#" class="contact-icon">
-              <img class="img" src="assets/ico-work-with-us.svg" />
-              <p class="text">Trabalhe Conosco</p>
+            <a href="#" class="contact__icon">
+              <img class="contact__img" src="assets/ico-work-with-us.svg" alt="icone para trabalhar conosco"/>
+              <p class="contacts__text">Trabalhe Conosco</p>
             </a>
           </div>
         </div>
         <hr class="separator">
-        <ul class="companies">
-          <li class="company-links">
-            <h1 class="title">Cartão Riachuelo</h1>
+        <ul class="company">
+          <li class="company__links">
+            <h2 class="company__title">Cartão Riachuelo</h2>
             <ul>
-              <li class="item">
-                <a class="text" href="#">
+              <li class="company__item">
+                <a class="company__text" href="#">
                   Midway Financeira
                 </a>
               </li>
-              <li class="item">
-                <a class="text" href="#">
+              <li class="company__item">
+                <a class="company__text" href="#">
                   Saiba como adquirir
                 </a>
               </li>
-              <li class="item">
-                <a class="text" href="#">
+              <li class="company__item">
+                <a class="company__text" href="#">
                   Veja sua fatura e extrato
                 </a>
               </li>
-              <li class="item">
-                <a class="text" href="#">
+              <li class="company__item">
+                <a class="company__text" href="#">
                   Buscando quitar suas dívidas?
                 </a>
               </li>
             </ul>
           </li>
-          <li class="company-links">
-            <h1 class="title">Sobre a Riachuelo</h1>
+          <li class="company__links">
+            <h2 class="company__title">Sobre a Riachuelo</h2>
             <ul>
-              <li class="item" class="item">
-                <a class="text" href="#">A Empresa</a>
+              <li class="company__item" class="company__item">
+                <a class="company__text" href="#">A Empresa</a>
               </li>
-              <li class="item">
-                <a class="text" href="#">Portal de Fornecedores</a>
+              <li class="company__item">
+                <a class="company__text" href="#">Portal de Fornecedores</a>
               </li>
-              <li class="item">
-                <a class="text" href="#">
+              <li class="company__item">
+                <a class="company__text" href="#">
                   Relação com Investidores
                 </a>
               </li>
-              <li class="item">
-                <a class="text" href="#">
+              <li class="company__item">
+                <a class="company__text" href="#">
                   Assessoria de Imprensa
                 </a>
               </li>
-              <li class="item">
-                <a class="text" href="#">Trabalhe Conosco</a>
+              <li class="company__item">
+                <a class="company__text" href="#">Trabalhe Conosco</a>
               </li>
-              <li class="item">
-                <a class="text" href="#">
+              <li class="company__item">
+                <a class="company__text" href="#">
                   Programa Jovem Aprendiz
                 </a>
               </li>
-              <li class="item">
-                <a class="text" href="#">
+              <li class="company__item">
+                <a class="company__text" href="#">
                   Cadastro de Startups
                 </a>
               </li>
-              <li class="item">
-                <a class="text" href="#"> Mapa do Site </a>
+              <li class="company__item">
+                <a class="company__text" href="#"> Mapa do Site </a>
               </li>
-              <li class="item">
-                <a class="text" href="#"> Guide Shop </a>
+              <li class="company__item">
+                <a class="company__text" href="#"> Guide Shop </a>
               </li>
-              <li class="item">
-                <a class="text" href="#">
+              <li class="company__item">
+                <a class="company__text" href="#">
                   Venda na Riachuelo Marketplace
                 </a>
               </li>
             </ul>
           </li>
-          <li class="company-links">
-            <h1 class="title">Moda que Transforma</h1>
+          <li class="company__links">
+            <h2 class="company__title">Moda que Transforma</h2>
             <ul>
-              <li class="item">
-                <a class="text" href="#">Na prática</a>
+              <li class="company__item">
+                <a class="company__text" href="#">Na prática</a>
               </li>
-              <li class="item">
-                <a class="text" href="#">Entre Costuras</a>
+              <li class="company__item">
+                <a class="company__text" href="#">Entre Costuras</a>
               </li>
-              <li class="item">
-                <a class="text" href="#">
+              <li class="company__item">
+                <a class="company__text" href="#">
                   Jeans Mais Transparente</a>
               </li>
-              <li class="item">
-                <a class="text" href="#">Ações Covid-19</a>
+              <li class="company__item">
+                <a class="company__text" href="#">Ações Covid-19</a>
               </li>
-              <li class="item">
-                <a class="text" href="#">Free Free</a>
+              <li class="company__item">
+                <a class="company__text" href="#">Free Free</a>
               </li>
             </ul>
           </li>
-          <li class="company-links">
-            <h1 class="title">Ajuda</h1>
+          <li class="company__links">
+            <h2 class="company__title">Ajuda</h2>
             <ul>
-              <li class="item">
-                <a class="text" href="#">Atendimento</a>
+              <li class="company__item">
+                <a class="company__text" href="#">Atendimento</a>
               </li>
-              <li class="item">
-                <a class="text" href="#">Perguntas Frequentes</a>
+              <li class="company__item">
+                <a class="company__text" href="#">Perguntas Frequentes</a>
               </li>
-              <li class="item">
-                <a class="text" href="#">Trocas e Devoluções</a>
+              <li class="company__item">
+                <a class="company__text" href="#">Trocas e Devoluções</a>
               </li>
-              <li class="item">
-                <a class="text" href="#">Portal da Privacidade</a>
+              <li class="company__item">
+                <a class="company__text" href="#">Portal da Privacidade</a>
               </li>
-              <li class="item">
-                <a class="text" href="#">Política de Privacidade</a>
+              <li class="company__item">
+                <a class="company__text" href="#">Política de Privacidade</a>
               </li>
-              <li class="item">
-                <a class="text" href="#">Termos e Condições de Uso</a>
+              <li class="company__item">
+                <a class="company__text" href="#">Termos e Condições de Uso</a>
               </li>
-              <li class="item">
-                <a class="text" href="#">Regras e Resultados de Sorteios</a>
+              <li class="company__item">
+                <a class="company__text" href="#">Regras e Resultados de Sorteios</a>
               </li>
             </ul>
           </li>
@@ -437,72 +481,72 @@
       </div>
       <div class="container payment">
         <div class="alternatives">
-          <h1 class="title">Formas de Pagamento</h1>
-          <img class="img" src="assets/ico-cartao-rchlo1.webp" />
-          <img class="img" src="assets/ico-cartao-rchlo2.webp" />
-          <img class="img" src="assets/ico-cartao-rchlo3.webp" />
-          <img class="img" src="assets/ico-cartao-visa.png" />
-          <img class="img" src="assets/ico-cartao-master.webp" />
-          <img class="img" src="assets/ico-cartao-amex.webp" />
-          <img class="img" src="assets/ico-cartao-diners.png" />
-          <img class="img" src="assets/ico-cartao-elo.png" />
-          <img class="img" src="assets/ico-boleto.webp" />
-          <img class="img" src="assets/ico-paypal.png" />
+          <h2 class="alternatives__title">Formas de Pagamento</h2>
+          <img class="alternatives__img" src="assets/ico-cartao-rchlo1.webp" alt="icone para pagamentos com cartão Riachelo PL"/>
+          <img class="alternatives__img" src="assets/ico-cartao-rchlo2.webp" alt="icone para pagamentos com cartão Riachelo bandeirado Mastercard"/>
+          <img class="alternatives__img" src="assets/ico-cartao-rchlo3.webp" alt="icone para pagamentos com cartão Riachelo bandeirado Visa"/>
+          <img class="alternatives__img" src="assets/ico-cartao-visa.png" alt="icone para pagamentos com cartão Visa"/>
+          <img class="alternatives__img" src="assets/ico-cartao-master.webp" alt="icone para pagamentos com cartão Mastercard"/>
+          <img class="alternatives__img" src="assets/ico-cartao-amex.webp" alt="icone para pagamentos com cartão Riachelo American Express"/>
+          <img class="alternatives__img" src="assets/ico-cartao-diners.png" alt="icone para pagamentos com cartão Diners"/>
+          <img class="alternatives__img" src="assets/ico-cartao-elo.png" alt="icone para pagamentos com cartão Elo"/>
+          <img class="alternatives__img" src="assets/ico-boleto.webp" alt="icone para pagamentos com boleto"/>
+          <img class="alternatives__img" src="assets/ico-paypal.png" alt="icone para pagamentos com PayPal"/>
         </div>
         <div class="social">
-          <h1 class="title">Siga a Riachuelo</h1>
-          <div class="icons">
+          <h2 class="social__title">Siga a Riachuelo</h2>
+          <div class="social__icons">
             <div class="icon">
               <a href="#">
-                <img class="img" src="assets/ico-facebook.svg" />
+                <img class="icon__img" src="assets/ico-facebook.svg" alt="icone para seguir a Riachuelo no Facebook"/>
               </a>
             </div>
 
             <div class="icon">
               <a href="#">
-                <img class="img" src="assets/ico-instagram.svg" />
+                <img class="icon__img" src="assets/ico-instagram.svg" alt="icone para seguir a Riachuelo no Instagram"/>
               </a>
-              <p class="text">RCHLO</p>
+              <p class="icon__text">RCHLO</p>
             </div>
 
             <div class="icon">
               <a href="#">
-                <img class="img" src="assets/ico-instagram.svg" />
+                <img class="icon__img" src="assets/ico-instagram.svg" alt="icone para seguir a Riachuelo Casa no Instagram"/>
               </a>
-              <p class="text">CASA RCHLO</p>
+              <p class="icon__text">CASA RCHLO</p>
             </div>
 
             <div class="icon">
               <a href="#">
-                <img class="img" src="assets/ico-pinterest.svg" />
+                <img class="icon__img" src="assets/ico-pinterest.svg" alt="icone para seguir a Riachuelo no Pinterest"/>
               </a>
             </div>
             <div class="icon">
               <a href="#">
-                <img class="img" src="assets/ico-twitter.svg" />
+                <img class="icon__img" src="assets/ico-twitter.svg" alt="icone para seguir a Riachuelo no Twitter"/>
               </a>
             </div>
             <div class="icon">
               <a href="#">
-                <img class="img" src="assets/ico-youtube.svg" />
+                <img class="icon__img" src="assets/ico-youtube.svg" alt="icone para seguir a Riachuelo no YouTube"/>
               </a>
             </div>
             <div class="icon">
               <a href="#">
-                <img class="img" src="assets/ico-linkedin.svg" />
+                <img class="icon__img" src="assets/ico-linkedin.svg" alt="icone para seguir a Riachuelo no Linkedin"/>
               </a>
             </div>
           </div>
         </div>
         <div class="accessibility">
-          <h1 class="title">Acessibilidade</h1>
-          <img class="img" src="assets/ico-a11y.webp" />
+          <h2 class="title">Acessibilidade</h2>
+          <img class="img" src="assets/ico-a11y.webp" alt="Este site suporta NVDA para maior acessibilidade"/>
         </div>
       </div>
       <div class="bottom">
-        <div class="container">
-          <div class="copyright">
-            <p class="text">
+        <div class="bottom__container">
+          <div class="bottom__copyright">
+            <p class="bottom__text">
               © Copyright 2017 - 2019. Todos os direitos reservados. Lojas
               Riachuelo S/A. Rua Landri Sales, 1.070, G02 Anexo B, Guarulhos -
               SP - Brasil<br>
@@ -528,8 +572,8 @@
               exibido na Sacola de Compras.
             </p>
           </div>
-          <div class="stamp">
-            <img class="img" src="assets/ra1000.webp" />
+          <div class="bottom__stamp">
+            <img class="img" src="assets/ra1000.webp" alt="Icone do selo Reclame Aqui RA1000"/>
           </div>
         </div>
       </div>

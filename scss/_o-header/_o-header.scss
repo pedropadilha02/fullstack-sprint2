@@ -1,0 +1,23 @@
+.header {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+
+    // container
+    @import "../_m-container.scss";
+
+    // header logo
+    @import "_a-header__logo.scss";
+
+    // search bar
+    @import "_m-search.scss";
+
+    // drawer menu
+    @import "_m-drawer/_a-drawer.scss";
+    @import "_m-drawer/a-drawer--active";
+    @import "_m-drawer/m-sidebar";
+  
+  
+    // menu
+    @import "_m-menu/_a-menu.scss";
+}

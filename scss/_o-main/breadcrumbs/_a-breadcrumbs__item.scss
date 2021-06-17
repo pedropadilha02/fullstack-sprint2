@@ -1,0 +1,15 @@
+.breadcrumbs__item {
+
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #585858;
+  
+    &:not(:last-child):hover {
+      text-decoration: underline;
+    }
+  
+    @include for-phone-only {
+    display: none;
+    }
+  }
+  

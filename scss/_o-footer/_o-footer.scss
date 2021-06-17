@@ -1,0 +1,33 @@
+.footer {
+
+    border-top: 2px solid lightgray;
+  
+    padding-top: 40px;
+    width: 100%;
+  
+    .container {
+      margin: 0 auto;
+      width: 90%;
+    }
+  
+    // inicio contact
+    @import "_m-footer__newsletter/m-footer__newsletter";
+    // fim contact
+  
+    // inicio links
+    @import "_m-footer__links/m-footer__links";
+    // fim links
+  
+    // inicio payment-social
+    @import "_m-footer__payment-social/m-footer__payment";
+    @import "_m-footer__payment-social/m-footer__social";
+    @import "_m-footer__payment-social/m-footer__accessibility";
+    // fim payment-social
+  
+    // inicio bottom
+    @import "_m-footer__bottom/m-footer__bottom";
+    // fim bottom
+  
+  }
+
+  

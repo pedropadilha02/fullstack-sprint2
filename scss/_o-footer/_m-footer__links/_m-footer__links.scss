@@ -1,0 +1,14 @@
+.footer__links {
+    background-color: #f6f6f6;
+    margin-top: 40px;
+
+    display: flex;
+    
+  }
+
+  @import "_m-footer__contacts/a-footter__icons";
+  @import "_m-footer__contacts/a-footer__contacts";
+
+  @import "a-footer__separator";
+
+  @import "_m-footer__company/m-footer__company";

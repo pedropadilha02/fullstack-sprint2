@@ -1,0 +1,7 @@
+div:nth-child(2) {
+
+    @include for-phone-only {
+      display: none;
+    }
+
+  }

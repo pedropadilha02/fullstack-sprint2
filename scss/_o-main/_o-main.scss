@@ -1,0 +1,21 @@
+.main {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1100px;
+  
+    padding: 16px;
+  
+    // inicio breadcrumbs
+    @import "breadcrumbs/_m-breadcrumbs.scss";
+    // fim breadcrumbs
+  
+    // inicio filters
+    @import "filters/_m-filter.scss";
+    // fim filters
+  
+  
+    // inicio products
+    @import "products/_o-products.scss";
+    // fim products
+  
+  }

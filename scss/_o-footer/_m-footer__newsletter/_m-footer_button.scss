@@ -1,0 +1,53 @@
+.newsletter__button {
+    margin-left: 20px;
+    color: rgba(0, 0, 0, 0.26);
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 20px 10px 20px;
+
+    .txt {
+      font-size: 0.8125rem;
+      text-transform: uppercase;
+    }
+  }
+
+.newsletter__interesses {
+  display: none;
+}
+  @include for-phone-only {
+      .newsletter__button {
+        display: none;
+      }
+
+      .newsletter__interesses {
+        display: flex;
+        height: 24px;
+        line-height: 24px;
+        border: 0px;
+        margin: 7px;
+        border-bottom: 1px solid rgba(38, 30, 30, 0.42);
+        outline: none;
+        width: 100%;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        color: #000;
+        
+    
+        &:hover {
+        border-bottom: 2px solid #261E1E;
+        }
+
+        &:focus-within {
+        border-bottom: 2px solid #261E1E;
+        }
+
+        &::placeholder {
+        font-style: italic;
+        opacity: 90%;
+        font-weight: 600;
+        }
+    
+    }
+  }

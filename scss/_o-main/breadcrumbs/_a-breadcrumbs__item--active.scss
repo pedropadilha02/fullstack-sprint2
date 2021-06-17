@@ -1,0 +1,10 @@
+.breadcrumbs__item.active {
+    color: #261e1e;
+    @include for-phone-only {
+      display: block;
+      text-align: center;
+      font-size: 1.4375rem;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }

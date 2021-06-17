@@ -1,0 +1,12 @@
+.filter__item {
+
+    display: flex;
+    align-items: center;
+    padding: 12px 14px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(38, 30, 30, 0.04);
+    }
+
+  }

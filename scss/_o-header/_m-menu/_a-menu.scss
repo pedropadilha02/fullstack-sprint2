@@ -1,0 +1,10 @@
+.menu {
+  
+    @include for-phone-only {
+      display: none;
+    }
+
+    @import "_a-menu__list.scss";
+    @import "_a-menu__link";
+    
+  }

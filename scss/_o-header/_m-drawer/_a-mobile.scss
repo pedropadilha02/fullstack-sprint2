@@ -1,0 +1,11 @@
+div:first-child {
+    display: none;
+    margin-bottom: 0px;
+
+    @include for-phone-only {
+      display: flex;
+      align-items: center;
+    }
+
+  }
+

@@ -1,0 +1,32 @@
+.drawer {
+    width: 24px;
+    opacity: 54%;
+    display: none;
+    
+
+    &--closed {
+      > img {
+        background: url(../assets/close.svg) no-repeat;
+        background-size: contain;
+      }        
+    }  
+  }
+
+.drawer__logo {
+  position: absolute;
+  height: 15px;
+  left: 45%;
+  top: 3%;
+  vertical-align: middle;
+  text-align: center;
+  flex-grow: 1;
+  transform: translateY(10px);
+  
+}
+
+.drawer__icon {
+  opacity: 0.5;
+  width: 24px;
+  position: absolute;
+  top: 3.7%;
+}

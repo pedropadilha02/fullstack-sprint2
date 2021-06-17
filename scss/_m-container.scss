@@ -1,0 +1,12 @@
+div {
+    margin: auto;
+    width: 95%;
+    max-width:container 1200px;
+
+    // .mobile
+    @import "_o-header/_m-drawer/a-mobile";
+
+    // .desktop
+    @import "_o-header/_m-drawer/a-desktop";
+
+  }

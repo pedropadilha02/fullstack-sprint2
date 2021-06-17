@@ -1,0 +1,29 @@
+.products {
+  
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .products__row {
+      margin: 8px;
+    }
+
+    .produtcts__list {
+      display: flex;
+      justify-content: space-between;
+
+      @include for-phone-only {
+        flex-wrap: wrap;
+      }
+
+    }
+
+    .products__cards {
+
+      @include for-phone-only {
+        flex-basis: 50%;
+        }
+      }
+
+    }
+
+    @import "_m-card.scss";

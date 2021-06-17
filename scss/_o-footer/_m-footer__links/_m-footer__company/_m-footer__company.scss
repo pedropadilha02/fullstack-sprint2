@@ -1,0 +1,33 @@
+.company {
+    display: flex;
+    width: 60%;
+    padding: 50px;
+
+    .company__links {
+      flex-grow: 1;
+      margin-left: 8px;
+      margin-right: 8px;
+
+      .company__item {
+        padding-top: 8px;
+      
+        .company__title {
+          text-transform: uppercase;
+          font-size: 0.875rem;
+        }
+
+        .company__text {
+          line-height: 25px;
+          font-size: 0.6875rem;
+          font-weight: 400;
+          color: black;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+      }
+
+    }
+  }
